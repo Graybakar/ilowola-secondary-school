@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilowola Secondary School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="top-nav">
+      <h1>Ilowola Secondary School</h1>
+      <ul>
+        <li><a href="#matokeo">Matokeo</a></li>
+        <li><a href="#mahudhurio">Mahudhurio</a></li>
+        <li><a href="#mwalimu">Mwalimu</a></li>
+        <li><a href="#usajili">Usajili</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <p class="tag">Elimu Bora, Nidhamu na Mafanikio</p>
+      <h2>Tovuti Rasmi ya Ilowola Secondary School</h2>
+      <p>Fuatilia matokeo ya wanafunzi, mahudhurio ya kila siku, na huduma za usajili mtandaoni.</p>
+      <a class="btn" href="#usajili">Jisajili Sasa</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="matokeo" class="card-section">
+      <h3>Matokeo ya Wanafunzi</h3>
+      <p>Tafuta matokeo kwa namba ya mtihani au jina la mwanafunzi.</p>
+      <form class="grid-form">
+        <label>
+          Namba ya Mtihani
+          <input type="text" placeholder="Mfano: ILO/2026/014" required />
+        </label>
+        <label>
+          Jina la Mwanafunzi
+          <input type="text" placeholder="Ingiza jina kamili" />
+        </label>
+        <button type="submit">Tafuta Matokeo</button>
+      </form>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Jina</th>
+              <th>Darasa</th>
+              <th>Hisabati</th>
+              <th>Kiingereza</th>
+              <th>Sayansi</th>
+              <th>Jumla</th>
+              <th>Wastani</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Asha Mkwawa</td>
+              <td>Form II</td>
+              <td>78</td>
+              <td>74</td>
+              <td>81</td>
+              <td>233</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td>Juma Mrema</td>
+              <td>Form IV</td>
+              <td>85</td>
+              <td>69</td>
+              <td>77</td>
+              <td>231</td>
+              <td>B+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="mahudhurio" class="card-section alt">
+      <h3>Mahudhurio ya Wanafunzi</h3>
+      <p>Rekodi ya mahudhurio ya wiki ya sasa.</p>
+      <div class="attendance-grid">
+        <article>
+          <h4>Form I</h4>
+          <p>Waliohudhuria: <strong>92%</strong></p>
+        </article>
+        <article>
+          <h4>Form II</h4>
+          <p>Waliohudhuria: <strong>89%</strong></p>
+        </article>
+        <article>
+          <h4>Form III</h4>
+          <p>Waliohudhuria: <strong>94%</strong></p>
+        </article>
+        <article>
+          <h4>Form IV</h4>
+          <p>Waliohudhuria: <strong>90%</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="mwalimu" class="card-section">
+      <h3>Paneli ya Mwalimu</h3>
+      <p>Mwalimu anaweza kutuma matokeo na taarifa za mahudhurio moja kwa moja.</p>
+      <form class="grid-form two-col">
+        <label>
+          Jina la Mwalimu
+          <input type="text" placeholder="Mfano: Mwl. John" required />
+        </label>
+        <label>
+          Somo
+          <input type="text" placeholder="Mfano: Hisabati" required />
+        </label>
+        <label>
+          Darasa
+          <select required>
+            <option value="">Chagua darasa</option>
+            <option>Form I</option>
+            <option>Form II</option>
+            <option>Form III</option>
+            <option>Form IV</option>
+          </select>
+        </label>
+        <label>
+          Tarehe
+          <input type="date" required />
+        </label>
+        <label class="full">
+          Matokeo (CSV / Maelezo)
+          <textarea rows="4" placeholder="Ingiza matokeo ya wanafunzi hapa..."></textarea>
+        </label>
+        <label class="full">
+          Taarifa ya Mahudhurio
+          <textarea rows="3" placeholder="Mfano: Wanafunzi 42/46 wamehudhuria."></textarea>
+        </label>
+        <button type="submit">Tuma Taarifa</button>
+      </form>
+    </section>
+
+    <section id="usajili" class="card-section alt">
+      <h3>Registration Form</h3>
+      <p>Jaza taarifa zifuatazo kwa usajili wa mwanafunzi mpya.</p>
+      <form class="grid-form two-col">
+        <label>
+          Jina Kamili la Mwanafunzi
+          <input type="text" required />
+        </label>
+        <label>
+          Jinsia
+          <select required>
+            <option value="">Chagua</option>
+            <option>Me</option>
+            <option>Ke</option>
+          </select>
+        </label>
+        <label>
+          Tarehe ya Kuzaliwa
+          <input type="date" required />
+        </label>
+        <label>
+          Darasa Unaloomba
+          <select required>
+            <option value="">Chagua</option>
+            <option>Form I</option>
+            <option>Form II</option>
+            <option>Form III</option>
+            <option>Form IV</option>
+          </select>
+        </label>
+        <label>
+          Jina la Mzazi/Mlezi
+          <input type="text" required />
+        </label>
+        <label>
+          Simu ya Mzazi/Mlezi
+          <input type="tel" required />
+        </label>
+        <label class="full">
+          Anwani ya Makazi
+          <textarea rows="3" required></textarea>
+        </label>
+        <button type="submit">Wasilisha Usajili</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ilowola Secondary School. Haki zote zimehifadhiwa.</p>
+  </footer>
+</body>
+</html>
